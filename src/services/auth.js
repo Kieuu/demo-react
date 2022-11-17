@@ -7,7 +7,7 @@ export const Login = async () => {
     password: "1256kieuanh",
   });
   localStorage.setItem('token',JSON.stringify(res.data.access_token))
-  
+  // window.location.replace("/todo");
 };
 
 export const Logout = () => {

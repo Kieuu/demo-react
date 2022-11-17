@@ -1,10 +1,11 @@
-import { Box, Button, Checkbox, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, VStack, Button, Checkbox, HStack, Image, Text } from "@chakra-ui/react";
 function TodoItem({ id, content }) {
   return (
-    <Box
+    <VStack
+      spacing={4}
+      align='stretch'
       borderRadius={"6px"}
       boxShadow={"0px 1px 17px rgba(0, 0, 0, 0.09)"}
-      w={"1130px"}
       h={"70px"}
       margin={"22px 0"}
       padding={"18px 25px"}
@@ -18,7 +19,7 @@ function TodoItem({ id, content }) {
           <Image src="/icon/Edit.svg" />
         </Button>
       </HStack>
-    </Box>
+    </VStack>
   );
 }
 

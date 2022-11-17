@@ -1,50 +1,6 @@
-import { List,
-    ListItem,
-    ListIcon,
-  chakra, Container, Heading, HStack, Input, Text } from "@chakra-ui/react";
-  import { MdSettings, MdCheckCircle } from 'react-icons/md'
-  
-  
-  
-  function App() {
-    return (
-      <Container>
-        <chakra.header>
-          <HStack>
-            <Input></Input>
-            <Text>Kieu Anh</Text>
-          </HStack>
-        </chakra.header>
-        <chakra.main>
-          <Heading>
-          UX Project
-          </Heading>
-          <Text>
-          Brainstorming
-          </Text>
-          <List spacing={3}>
-    <ListItem>
-      <ListIcon as={MdCheckCircle} color='green.500' />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit
-    </ListItem>
-    <ListItem>
-      <ListIcon as={MdCheckCircle} color='green.500' />
-      Assumenda, quia temporibus eveniet a libero incidunt suscipits
-    </ListItem>
-    <ListItem>
-      <ListIcon as={MdCheckCircle} color='green.500' />
-      Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
-    </ListItem>
-    {/* You can also use custom icons from react-icons */}
-    <ListItem>
-      <ListIcon as={MdSettings} color='green.500' />
-      Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
-    </ListItem>
-  </List>
-        </chakra.main>
-      </Container>
-    );
-  }
-  
-  export default App;
-  
+// borderRadius={"6px"}
+// boxShadow={"0px 1px 17px rgba(0, 0, 0, 0.09)"}
+// w={"1130px"}
+// h={"70px"}
+// margin={"22px 50px"}
+// padding={"18px 25px"}
