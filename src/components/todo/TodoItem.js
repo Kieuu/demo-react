@@ -1,4 +1,4 @@
-import { Box, VStack, Button, Checkbox, HStack, Image, Text } from "@chakra-ui/react";
+import { VStack, Button, Checkbox, HStack, Image, Text } from "@chakra-ui/react";
 function TodoItem({ id, content }) {
   return (
     <VStack
@@ -12,10 +12,13 @@ function TodoItem({ id, content }) {
     >
       <HStack justifyContent={'space-between'} alignItems='center'>
         <HStack>
-          <Checkbox />
+          <Checkbox size='lg' colorScheme='orange' defaultChecked />
           <Text>{content}</Text>
         </HStack>
-        <Button>
+        <Button
+          colorScheme="white"
+          padding={'0 15px 0'}
+        >
           <Image src="/icon/Edit.svg" />
         </Button>
       </HStack>

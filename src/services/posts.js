@@ -9,10 +9,8 @@ export const getAllPosts = async () => {
           : "",
     },
   };
-  const res = await axios.get(
+  await axios.get(
     "https://simple-backend.onrender.com/posts",
     config
   );
-  console.log(res);
-  console.log(localStorage.getItem("token"));
 };

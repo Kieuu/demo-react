@@ -1,7 +1,7 @@
 import {
   Button, InputGroup, Box, InputLeftElement, Heading
 } from "@chakra-ui/react";
-import { Login, Logout } from "../services/auth";
+import { Login} from "../services/auth";
 import { LockIcon, EmailIcon } from "@chakra-ui/icons";
 import {
   Flex,
@@ -12,22 +12,9 @@ import {
   FormControl,
   FormHelperText,
 } from "@chakra-ui/react";
-import { useCallback, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
+
 function Home() {
-// const token = localStorage.getItem('token')
-// useEffect(()=> {
-//   console.log('token',token);
-// },[])
-// const navigate = useNavigate()
-// useEffect(()=> {
-//   if (token) {
-//     navigate('/todo')
-//   } else {
-//     navigate('/')
-//   }
-// })
-const handleClick = Login()
   return (
     <>
       <Flex
@@ -70,6 +57,7 @@ const handleClick = Login()
                     children={<LockIcon color="gray.300" />}
                   />
                   <Input
+                    type="password"
                     placeholder="Password"
                   />
                 </InputGroup>
