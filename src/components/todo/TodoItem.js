@@ -12,7 +12,7 @@ function TodoItem({ id, content }) {
     >
       <HStack justifyContent={'space-between'} alignItems='center'>
         <HStack>
-          <Checkbox size='lg' colorScheme='orange' defaultChecked />
+          <Checkbox size='lg' colorScheme='orange' defaultChecked padding={'0 3px 0 0'}/>
           <Text>{content}</Text>
         </HStack>
         <Button
